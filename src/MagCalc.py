@@ -127,6 +127,7 @@ main_loop = True
 while main_loop:
     try:
         parse_input(input(prompt))
+        # TODO: input is made lowercase, meaing that V will go to v (this is bad)
     except KeyboardInterrupt:
         # Make a clean Ctrl-C exit
         print("")
